@@ -1,0 +1,130 @@
+/** @format */
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.dropdown {
+  margin-left: 100px;
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #f1f1f1;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-left: 100px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.switch {
+  margin-left: 100px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.progress-bar {
+  width: 30%;
+  margin-left: 1010px;
+  margin-top: -29.5px;
+  background-color: #f1f1f1;
+}
+
+.progress {
+  width: 45%;
+  height: 25px;
+  background-color: #007bff;
+}

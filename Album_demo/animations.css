@@ -1,0 +1,160 @@
+/** @format */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.transition-toy {
+  display: flex;
+  margin-right: 1000px;
+  margin-bottom: 265px;
+  position: absolute;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card1 {
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cartoonCard0 {
+  border-radius: 10px;
+}
+
+.card1:hover {
+  transform: rotate(-20deg);
+}
+
+.card2 {
+  width: 200px;
+  height: 300px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cartoonCard {
+  border-radius: 10px;
+}
+
+.card2:hover {
+  transform: rotate(20deg);
+}
+
+.cards {
+  position: absolute;
+  margin-bottom: 565px;
+  margin-right: 500px;
+}
+.card3 {
+  display: flex;
+  margin-right: 80px;
+  margin-bottom: 265px;
+  position: absolute;
+}
+
+.green {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+  background: green;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card3:hover .green {
+  opacity: 0.2;
+}
+
+.card4 {
+  display: flex;
+  margin-left: 200px;
+  margin-bottom: 265px;
+  position: absolute;
+}
+
+.red {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+  background: red;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card4:hover .red {
+  opacity: 0.2;
+}
+
+.plane {
+  margin-top: 250px;
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  animation: movePlane 10s linear infinite;
+}
+
+@keyframes movePlane {
+  0% {
+    right: 100px;
+    transform: transitionX(100);
+  }
+  100% {
+    right: calc(100% + 100px);
+    transform: transitionY(100px);
+  }
+}
+
+.one {
+  margin-top: 15px;
+  cursor: pointer;
+  margin-left: 30px;
+  transition: transform 0.9s ease-out;
+}
+
+.one:hover {
+  transform: translateX(230px);
+}
+
+.hero {
+  position: fixed;
+  margin-top: -120px;
+}
+
+.superman {
+  margin-top: -225px;
+  cursor: pointer;
+  margin-left: -189px;
+  transition: transform 0.9s ease-out;
+}
+
+.superman:hover {
+  transform: translateX(209px);
+}
+
+.board {
+  margin-left: -300px;
+  margin-top: -200px;
+}
